@@ -1,17 +1,21 @@
 import React, { useState } from "react";
 
-const UseState = () =>{
-    const [click, setClick] = useState(0);
+const UseState = () => {
+  const [click, setclick] = useState(0);
+  const func = () => {
+    setclick((prevState) => prevState + 1);
+  };
 
-    return (
-        <div style={{borderTop: '1px solid #000'}}>
-            <h2>Use State example</h2>
-            <p>You clicked {click} times</p>
-            <p>Number of times you clicked is {click % 2 == 0 ? 'even!' : 'odd!'}</p>
-            <button onClick={ () => setClick(click => click + 1) }>Click Me</button>
-        </div>
-    )
-
-}
+  return (
+    <div>
+      <h2>UseState</h2>
+      <p>You clicked {click} times</p>
+      <p>
+        The number of times you clicked is {click % 2 == 0 ? "EVEN" : "ODD"}
+      </p>
+      <button onClick={func}>Click me</button>
+    </div>
+  );
+};
 
 export default UseState;
