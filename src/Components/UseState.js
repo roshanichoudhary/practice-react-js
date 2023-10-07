@@ -8,10 +8,9 @@ const UseState = () => {
 
   return (
     <div>
-      <h2>UseState</h2>
       <p>You clicked {click} times</p>
       <p>
-        The number of times you clicked is {click % 2 == 0 ? "EVEN" : "ODD"}
+        The number of times you clicked is {click % 2 === 0 ? "EVEN" : "ODD"}
       </p>
       <button onClick={func}>Click me</button>
     </div>

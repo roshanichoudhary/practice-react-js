@@ -7,7 +7,7 @@ class ClassComponent extends React.Component {
   render() {
     return (
       <p>
-        My modal is {this.props.modal}. I am a {this.props.color} color Car.
+        My modal is {this.props.modal}. I am a {this.props.color} color Car
       </p>
     );
   }
