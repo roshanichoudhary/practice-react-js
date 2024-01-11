@@ -15,7 +15,7 @@ const Form = () => {
         type="text"
         value={name}
         onChange={(e) => setName(e.target.value)}
-      ></input>
+      />
       <input type="submit" value="submit"></input>
     </form>
   );

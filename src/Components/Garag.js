@@ -1,9 +1,9 @@
 import React from "react";
 
-const Garag = (props) => {
+const Garag = ({ brand }) => {
   return (
     <h2>
-      My car name is {props.brand.name} and modal is {props.brand.modal}
+      My car name is {brand.name} and modal is {brand.modal}
     </h2>
   );
 };

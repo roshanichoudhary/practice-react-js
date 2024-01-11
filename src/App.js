@@ -23,6 +23,8 @@ import UseMemo from "./Components/UseMemo";
 import BackwardCounter from "./Components/BackwardCounter";
 import ForwardCounter from "./Components/ForwardCounter";
 import ComponentA from "./Components/ComponentA";
+import SearchUser from "./Components/SearchUser";
+import Destructuring from "./Components/Destructuring";
 
 function createMap(info) {
   return (
@@ -40,6 +42,14 @@ function App() {
   };
 
   const personName = "John Doe";
+
+  const vehicleOne = {
+    brand: "Ford",
+    model: "Mustang",
+    type: "car",
+    year: 2021,
+    color: "red",
+  };
 
   return (
     <div>
@@ -124,6 +134,14 @@ function App() {
         <h2>Custom Hook</h2>
         <ForwardCounter />
         <BackwardCounter />
+      </div>
+      <div style={{ borderTop: "1px solid #000" }}>
+        <h2>Search User</h2>
+        <SearchUser />
+      </div>
+      <div style={{ borderTop: "1px solid #000" }}>
+        <h2>Destructuring</h2>
+        <Destructuring fname="Joe" lname="Doe" />
       </div>
     </div>
   );

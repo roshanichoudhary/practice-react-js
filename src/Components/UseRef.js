@@ -1,5 +1,4 @@
-import React, { useRef } from "react";
-import { useState } from "react";
+import React, { useRef, useState } from "react";
 
 const UseRef = () => {
   const [myData, setMyData] = useState("");
